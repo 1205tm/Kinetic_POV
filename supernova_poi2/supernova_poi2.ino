@@ -5,24 +5,7 @@
   - Teensy 3.2 (required - NOT compatible w/AVR-based boards)
   - 2200 mAh Lithium Ion Battery https://www.adafruit.com/product/1781
   - LiPoly Backpack https://www.adafruit.com/product/2124
-  - 144 LED/m DotStar strip (#2328 or #2329)
-    (ONE METER is enough for TWO poi)
-  - Infrared Sensor: https://www.adafruit.com/product/157
-  - Mini Remote Control: https://www.adafruit.com/product/389
-    (only one remote is required for multiple poi)
-
-  Needs Adafruit_DotStar library: github.com/adafruit/Adafruit_DotStar
-  Also, uses version of IRremote library from the Teensyduino installer,
-  the stock IRremote lib will NOT work here!
-
-  This is based on the LED poi code (also included in the repository),
-  but AVR-specific code has been stripped out for brevity, since these
-  mega-poi pretty much require a Teensy 3.X.
-
-  Adafruit invests time and resources providing this open source code,
-  please support Adafruit and open-source hardware by purchasing
-  products from Adafruit!
-
+  - 144 LED/m DotStar strip (#2328 or #23
   Written by Phil Burgess / Paint Your Dragon for Adafruit Industries.
   MIT license, all text above must be included in any redistribution.
   See 'COPYING' file for additional notes.
@@ -68,7 +51,7 @@ decode_results results;
 // Adafruit IR Remote Codes:
 //   Button       Code         Button  Code
 //   -----------  ------       ------  -----
-//   VOL-:        0xFD00FF     0/10+:  0xFD30CF
+//   VOL-:        0xFD00FF     0/10+:  0xFD30CF   
 //   Play/Pause:  0xFD807F     1:      0xFD08F7
 //   VOL+:        0xFD40BF     2:      0xFD8877
 //   SETUP:       0xFD20DF     3:      0xFD48B7
@@ -91,6 +74,18 @@ decode_results results;
 #define BTN_PATTERN_NEXT 0xFD50AF
 #define BTN_AUTOPLAY     0XFD906F
 #define BTN_NONE         -1
+
+/* SPARKFUN REMOTE RED
+#define POWER 0x10EFD827 
+#define A 0x10EFF807 
+#define B 0x10EF7887
+#define C 0x10EF58A7
+#define UP 0x10EFA05F
+#define DOWN 0x10EF00FF
+#define LEFT 0x10EF10EF
+#define RIGHT 0x10EF807F
+#define SELECT 0x10EF20DF
+ */
 
 // -------------------------------------------------------------------------
 
