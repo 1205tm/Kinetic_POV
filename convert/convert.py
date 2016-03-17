@@ -24,8 +24,8 @@ import sys
 # capacity and desired run time.
 
 # These you can edit to match your build:
-batterySize    = 150  # Battery capacity, in milliamp-hours (mAh)
-runTime        = 1.1  # Est. max run time, in hours (longer = dimmer LEDs)
+batterySize    = 880  # Battery capacity, in milliamp-hours (mAh)
+runTime        = 1.8  # Est. max run time, in hours (longer = dimmer LEDs)
 parallelStrips = 2    # Same data is issued to this many LED strips
 
 # These probably don't need editing:
